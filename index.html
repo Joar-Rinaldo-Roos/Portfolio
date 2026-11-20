@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joar Rinaldo Roos’s portfolio of applied AI, surgical instrument tracking, and computer networks.">
+  <meta name="theme-color" content="#f8f8f5">
+  <title>Joar Rinaldo Roos · Portfolio</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Joar Rinaldo Roos, home">Joar Rinaldo Roos<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#ai">Applied AI</a>
+      <a href="#networks">Networks</a>
+      <a href="#projects">Other work</a>
+      <a href="./about/">About me</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Master’s student · Lund University</p>
+        <h1 id="home-title">Joar Rinaldo<br>Roos<span>.</span></h1>
+        <p class="hero-lead">Applied AI and computer networks</p>
+        <p class="lede">My work ranges from tracking surgical instruments in video to tracking devices on indoor maps. I’m interested in what systems can reliably tell us and how to test their limits.</p>
+        <a class="button" href="#ai">Explore my work</a>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-art">
+          <img src="./assets/surgical-instruments.webp" alt="Illustration of stainless steel surgical instruments on blue cloth." fetchpriority="high" width="1056" height="792">
+        </div>
+        <figcaption><a href="#caisa">CAISA thesis</a><span>Concept illustration</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="ai" aria-labelledby="ai-title">
+      <div class="section-heading">
+        <h2 id="ai-title">Applied AI</h2>
+        <p>Computer vision, AI-assisted development, and retrieval-augmented generation.</p>
+      </div>
+      <article class="thesis" id="caisa" aria-labelledby="caisa-title">
+        <div class="thesis-intro">
+          <p class="eyebrow">Master’s thesis · CAISA</p>
+          <h3 id="caisa-title">Tracking surgical instruments</h3>
+          <p>At Skåne University Hospital in Lund, we asked whether computer vision could help prevent instruments from being left behind during pediatric open-heart surgery.</p>
+          <ul class="tags" aria-label="Topics">
+            <li>Computer vision</li><li>YOLO</li><li>SAM 3</li><li>Codex</li>
+          </ul>
+        </div>
+        <div class="thesis-note">
+          <h4>How the results changed the question</h4>
+          <p>The tracking methods we tested fell short of the reliability that task needed. We shifted to a question the data might help answer. Could patterns in which tools surgeons use, and when they switch between them, help them review surgical workflow?</p>
+          <details>
+            <summary>Detection and tracking methods</summary>
+            <p>I worked with YOLO and SAM 3 to detect and track instruments in video. I also explored whether context from the footage could help assess detections and reduce false positives.</p>
+          </details>
+          <details>
+            <summary>How I used Codex</summary>
+            <p>I used Codex to iterate on the instrument-tracking code. The project taught me to judge changes against what the tracker needed to measure and what the footage could actually support.</p>
+          </details>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project rag" aria-labelledby="rag-title">
+          <p class="eyebrow">Project exploration</p>
+          <h3 id="rag-title">A RAG sandbox</h3>
+          <p>I’m interested in testing whether a system retrieves the passage that answers a question and whether its answer stays within what that passage supports.</p>
+          <details class="rag-example">
+            <summary>See a sample evaluation case</summary>
+            <div class="rag-body">
+              <p class="eyebrow">Illustrative example · fictional handbook</p>
+              <dl>
+                <div><dt>Retrieved passage</dt><dd>“Equipment may be borrowed for up to five working days.”</dd></div>
+                <div><dt>Question</dt><dd>Can I extend an equipment loan?</dd></div>
+                <div><dt>Expected answer</dt><dd>The passage specifies the loan length. It gives no rule for extensions.</dd></div>
+              </dl>
+            </div>
+          </details>
+        </article>
+        <article class="project mcp" aria-labelledby="mcp-title">
+          <p class="eyebrow">Exploring next</p>
+          <h3 id="mcp-title">Model Context Protocol</h3>
+          <p>I’d like to try MCP in a personal project. One idea is to give an AI assistant a tool for retrieving project notes and test whether it selects the right tool and uses the result correctly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section network-section" id="networks" aria-labelledby="networks-title">
+      <div class="section-heading">
+        <h2 id="networks-title">Computer networks</h2>
+        <p>IoT systems integration at Combain.</p>
+      </div>
+      <article class="network" aria-labelledby="combain-title">
+        <div class="network-copy">
+          <p class="eyebrow">Industry project · Combain</p>
+          <h3 id="combain-title">From connected devices to indoor maps</h3>
+          <p>I led an IoT software project for real-time indoor device tracking. I built integrations between existing systems in C#/.NET using APIs and MQTT and coordinated the work with another developer.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>C# / .NET</li><li>APIs</li><li>MQTT</li>
+          </ul>
+        </div>
+        <figure class="network-figure">
+          <figcaption>Indoor tracking at a glance</figcaption>
+          <ol class="signal-flow">
+            <li><span class="signal-symbol device" aria-hidden="true"><i></i></span><span>Connected<br>devices</span></li>
+            <li><span class="signal-symbol integration" aria-hidden="true"><i></i><i></i><i></i></span><span>Software<br>integration</span></li>
+            <li><span class="signal-symbol map" aria-hidden="true"><i></i></span><span>Indoor<br>maps</span></li>
+          </ol>
+        </figure>
+      </article>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Other work</h2>
+      </div>
+      <article class="additional-project" aria-labelledby="vr-title">
+        <div>
+          <p class="eyebrow">Virtual reality · Team project</p>
+          <h3 id="vr-title">VR cave experience</h3>
+        </div>
+        <div>
+          <p>We developed a cave-crawling experience intended to help people with claustrophobia. The idea was to explore how an enclosed space could feel from inside a headset.</p>
+          <p>I worked on the design and development with teammates from four countries.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about-banner" aria-labelledby="about-banner-title">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2 id="about-banner-title">A little more about Joar.</h2>
+        <p>An exchange in Brazil, learning Chinese, and serving as a drone assistant mechanic.</p>
+      </div>
+      <a class="button button-light" href="./about/">Read my story</a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <a class="wordmark" href="./">Joar Rinaldo Roos<span>.</span></a>
+    <span>Lund University · Expected graduation January 2027</span>
+  </footer>
+</body>
+</html>
