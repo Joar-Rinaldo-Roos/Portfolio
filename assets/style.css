@@ -182,7 +182,9 @@ details > p { margin-top: .55rem; }
 .signal-symbol.map i { width: 1.2rem; height: 1.05rem; border: 2px solid currentColor; background: linear-gradient(90deg, transparent 44%, currentColor 44% 56%, transparent 56%), linear-gradient(transparent 44%, currentColor 44% 56%, transparent 56%); }
 
 .additional-project { align-items: center; background: var(--blue-soft); }
+.additional-project + .additional-project { margin-top: 1rem; border: 1px solid var(--line); background: var(--card); }
 .additional-project p + p { margin-top: .65rem; }
+.project-link { display: inline-block; margin-top: .85rem; color: var(--blue-dark); font-weight: 700; }
 
 .about-banner {
   display: flex;
