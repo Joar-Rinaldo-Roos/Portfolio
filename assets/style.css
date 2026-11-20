@@ -160,10 +160,11 @@ details > p { margin-top: .55rem; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; align-items: start; }
 .project { align-self: stretch; padding: clamp(1.4rem, 3vw, 2.25rem); background: var(--card); border: 1px solid var(--line); }
 .project h3 { margin: .45rem 0 .55rem; font: 400 clamp(1.9rem, 3vw, 2.75rem) / 1.05 var(--serif); }
-.project > p:last-of-type { color: var(--muted); }
+.project > h3 ~ p { color: var(--muted); }
+.rag > p + p { margin-top: .65rem; }
 .rag-body { margin-top: .75rem; padding: 1rem 1.125rem; background: var(--blue-soft); }
 .rag-body dl { margin-top: .6rem; }
-.rag-body dl > div + div { margin-top: .55rem; }
+.rag-body dl > div + div { margin-top: .8rem; }
 .rag-body dt { font-size: .875rem; font-weight: 700; }
 .rag-body dd { color: var(--muted); }
 

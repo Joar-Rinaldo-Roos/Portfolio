@@ -66,18 +66,36 @@
       </article>
 
       <div class="project-grid">
-        <article class="project rag" aria-labelledby="rag-title">
+        <article class="project rag" id="rag" aria-labelledby="rag-title">
           <p class="eyebrow">Project exploration</p>
-          <h3 id="rag-title">A RAG sandbox</h3>
-          <p>I’m interested in testing whether a system retrieves the passage that answers a question and whether its answer stays within what that passage supports.</p>
+          <h3 id="rag-title">A RAG sandbox for surgical workflow</h3>
+          <p>I built a retrieval-augmented generation (RAG) sandbox around a question from my thesis: <strong>Can an agent recognize a sequence of instrument use and use it to repair a broken track?</strong></p>
+          <p>The agent queries a three-hour tracker CSV to see which instruments appear together and how their use changes over time. It consults findings from other surgeries to interpret the sequence, then uses the observations from the current operation to propose a repair.</p>
           <details class="rag-example">
             <summary>See a sample evaluation case</summary>
             <div class="rag-body">
-              <p class="eyebrow">Illustrative example · fictional handbook</p>
+              <p class="eyebrow">Illustrative example · simulated tracking data</p>
               <dl>
-                <div><dt>Retrieved passage</dt><dd>“Equipment may be borrowed for up to five working days.”</dd></div>
-                <div><dt>Question</dt><dd>Can I extend an equipment loan?</dd></div>
-                <div><dt>Expected answer</dt><dd>The passage specifies the loan length. It gives no rule for extensions.</dd></div>
+                <div>
+                  <dt>Question</dt>
+                  <dd>What activity does this sequence suggest, and which track, if any, should continue needle-driver track 17?</dd>
+                </div>
+                <div>
+                  <dt>Retrieved CSV observations</dt>
+                  <dd>A needle driver and forceps appeared together several times before track 17 disappeared. Two new needle-driver tracks appeared near its last position. Track 42 continued moving alongside the same forceps over the next few seconds. Track 43 moved away.</dd>
+                </div>
+                <div>
+                  <dt>Context from earlier surgeries</dt>
+                  <dd>During annotated suturing segments, the needle driver and forceps often worked together across several passes, with brief gaps in visibility.</dd>
+                </div>
+                <div>
+                  <dt>Expected answer</dt>
+                  <dd>The sequence is consistent with suturing. Propose linking track 17 to track 42 because it continued the same pattern with the forceps after the gap. The historical context helps explain the sequence, and the movement in the current CSV supports the proposed link.</dd>
+                </div>
+                <div>
+                  <dt>What this case tests</dt>
+                  <dd>Did the agent retrieve enough of the sequence to see what the instruments were doing together? Did that context help it choose which track to reconnect?</dd>
+                </div>
               </dl>
             </div>
           </details>
