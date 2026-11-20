@@ -70,7 +70,10 @@
           <p class="eyebrow">Project exploration</p>
           <h3 id="rag-title">A RAG sandbox for surgical workflow</h3>
           <p>I built a retrieval-augmented generation (RAG) sandbox around a question from my thesis: <strong>Can an agent recognize a sequence of instrument use and use it to repair a broken track?</strong></p>
-          <p>The agent queries a three-hour tracker CSV to see which instruments appear together and how their use changes over time. It consults findings from other surgeries to interpret the sequence, then uses the observations from the current operation to propose a repair.</p>
+          <details id="rag-workflow">
+            <summary>How did ours work?</summary>
+            <p>The agent queries a three-hour tracker CSV to see which instruments appear together and how their use changes over time. It consults findings from other surgeries to interpret the sequence, then uses the observations from the current operation to propose a repair.</p>
+          </details>
           <details class="rag-example">
             <summary>See a sample evaluation case</summary>
             <div class="rag-body">

@@ -161,7 +161,7 @@ details > p { margin-top: .55rem; }
 .project { align-self: stretch; padding: clamp(1.4rem, 3vw, 2.25rem); background: var(--card); border: 1px solid var(--line); }
 .project h3 { margin: .45rem 0 .55rem; font: 400 clamp(1.9rem, 3vw, 2.75rem) / 1.05 var(--serif); }
 .project > h3 ~ p { color: var(--muted); }
-.rag > p + p { margin-top: .65rem; }
+.rag > details > p { color: var(--muted); }
 .rag-body { margin-top: .75rem; padding: 1rem 1.125rem; background: var(--blue-soft); }
 .rag-body dl { margin-top: .6rem; }
 .rag-body dl > div + div { margin-top: .8rem; }
