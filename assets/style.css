@@ -140,6 +140,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline
 .thesis-intro > p:last-of-type, .thesis-note p { color: #e3e8ff; }
 .thesis-note { border-left: 1px solid #5b6698; padding-left: clamp(1.5rem, 4vw, 4rem); }
 .thesis-note h4 { margin-bottom: .5rem; font-size: 1.1rem; }
+.thesis-note h4:not(:first-child) { margin-top: 1.25rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.2rem 0 0; padding: 0; list-style: none; }
 .tags li { padding: .14rem .65rem; border: 1px solid var(--line); border-radius: 2rem; font-size: .8125rem; font-weight: 600; }
 .thesis .tags li { border-color: #6774a8; color: #e3e8ff; }

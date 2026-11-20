@@ -58,10 +58,8 @@
             <summary>Detection and tracking methods</summary>
             <p>I worked with YOLO and SAM 3 to detect and track instruments in video. I also explored whether context from the footage could help assess detections and reduce false positives.</p>
           </details>
-          <details>
-            <summary>How I used Codex</summary>
-            <p>I used Codex to iterate on the instrument-tracking code. The project taught me to judge changes against what the tracker needed to measure and what the footage could actually support.</p>
-          </details>
+          <h4 id="ai-assisted-workflow">AI-assisted workflow</h4>
+          <p>I used Codex to prototype a track-repair step for the instrument-tracking pipeline. I defined what the agent should look up in the tracker CSV, how it should use findings from earlier surgeries to interpret instrument-use sequences, and when it should leave a gap unresolved. I designed the evaluation around two outcomes: correct reconnections and false merges, measured against manually annotated tracks.</p>
         </div>
       </article>
 
