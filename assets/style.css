@@ -199,6 +199,19 @@ details > p { margin-top: .55rem; }
 .additional-project { align-items: center; background: var(--blue-soft); }
 .additional-project + .additional-project { margin-top: 1rem; border: 1px solid var(--line); background: var(--card); }
 .additional-project p + p { margin-top: .65rem; }
+
+.side-projects { margin-top: 1rem; border: 1px solid var(--line); background: var(--card); }
+.side-projects > summary { position: relative; display: block; width: 100%; margin: 0; padding: 1.25rem 3.25rem 1.25rem 1.5rem; list-style: none; color: var(--ink); }
+.side-projects > summary::-webkit-details-marker { display: none; }
+.side-projects > summary::after { position: absolute; right: 1.5rem; top: 1.48rem; content: "+"; color: var(--blue); font-size: 1.5rem; font-weight: 400; line-height: 1; }
+.side-projects[open] > summary::after { content: "−"; }
+.side-projects > summary:hover { text-decoration: none; background: var(--blue-soft); }
+.side-projects-heading { display: block; font-size: 1.1rem; font-weight: 700; }
+.side-projects-subtitle { display: block; margin-top: .15rem; color: var(--muted); font-size: .9rem; font-weight: 400; }
+.side-project-item { padding: 1.5rem; border-top: 1px solid var(--line); }
+.side-project-item h3 { margin: .4rem 0 .65rem; font: 400 clamp(1.7rem, 2.7vw, 2.5rem)/1.08 var(--serif); }
+.side-project-item > p:not(.eyebrow) { max-width: 54rem; color: var(--muted); }
+
 .project-link { display: inline-block; margin-top: .85rem; color: var(--blue-dark); font-weight: 700; }
 
 .about-banner {
