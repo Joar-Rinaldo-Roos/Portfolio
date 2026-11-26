@@ -187,6 +187,9 @@ details > p { margin-top: .55rem; }
 .network-copy > p:last-of-type { color: var(--muted); }
 .network-figure { padding: clamp(1.3rem, 3vw, 2.6rem); color: var(--night); background: var(--blue-soft); }
 .network-figure figcaption { font-size: .875rem; font-weight: 700; }
+.network-screenshot { padding: clamp(.8rem, 2vw, 1.4rem); }
+.network-screenshot img { display: block; width: 100%; height: auto; max-height: 30rem; object-fit: contain; background: #fff; }
+.network-screenshot figcaption { margin-top: .75rem; color: var(--night); font-size: .8125rem; font-weight: 600; }
 .signal-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 1.5rem 0 0; padding: 0; gap: .5rem; list-style: none; }
 .signal-flow li { position: relative; display: grid; justify-items: center; gap: .65rem; text-align: center; font-size: .875rem; font-weight: 650; line-height: 1.25; }
 .signal-flow li + li::before { position: absolute; top: 1.5rem; right: calc(50% + 1.5rem); width: calc(100% - 2.5rem); border-top: 1px dashed #8598e7; content: ""; }
