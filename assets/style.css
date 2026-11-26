@@ -73,6 +73,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline
   font: 400 clamp(4.2rem, 8.4vw, 8.3rem) / .85 var(--serif);
   letter-spacing: -.055em;
 }
+.hero h1 { line-height: 1.02; }
 .hero-lead { font-size: clamp(1.2rem, 1.7vw, 1.55rem); font-weight: 650; letter-spacing: -.036em; }
 .lede { max-width: 36rem; margin-top: .5rem; color: var(--muted); font-size: 1.0625rem; }
 .button {
