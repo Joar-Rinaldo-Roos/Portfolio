@@ -1,0 +1,59 @@
+/* About page — an editorial extension of the main portfolio theme. */
+.about-hero-new { max-width: 57rem; padding-bottom: clamp(3rem, 7vw, 5.5rem); }
+.about-hero-new .about-lede { max-width: 54rem; }
+.about-story-collection { border-top: 1px solid var(--line); }
+.about-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
+  gap: clamp(1.75rem, 5.4vw, 5.5rem);
+  align-items: center;
+  padding-block: clamp(2.5rem, 6vw, 5.7rem);
+  border-bottom: 1px solid var(--line);
+}
+.about-feature-reverse .about-feature-photo { order: 2; }
+.about-feature-reverse .about-feature-copy { order: 1; }
+.about-feature-photo { margin: 0; }
+.about-feature-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--blue);
+  background: var(--blue-soft);
+}
+.about-feature-photo figcaption {
+  margin-top: .6rem;
+  font-size: .8125rem;
+  color: var(--muted);
+}
+.about-feature-photo.portrait-photo { max-width: 29rem; justify-self: end; }
+.about-feature-copy h2, .about-more-card h2 {
+  margin: .65rem 0 1rem;
+  font: 400 clamp(2.6rem, 4.8vw, 4.7rem)/.99 var(--serif);
+  letter-spacing: -.035em;
+}
+.about-feature-copy p:not(.eyebrow), .about-more-card p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.0625rem;
+}
+.about-feature-copy p + p { margin-top: .85rem; }
+.about-more {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 1rem;
+  margin-top: clamp(1.6rem, 3.5vw, 3rem);
+}
+.about-more-card {
+  padding: clamp(1.6rem, 3.5vw, 3rem);
+  border: 1px solid var(--line);
+  background: white;
+}
+.about-more-card:first-child { background: var(--blue-soft); border-color: #cad3f7; }
+.about-more-card h2 { font-size: clamp(2.2rem, 3.4vw, 3.3rem); }
+.about-back { margin-top: 2.25rem; }
+@media (max-width: 46rem) {
+  .about-feature, .about-more { grid-template-columns: 1fr; }
+  .about-feature-reverse .about-feature-photo, .about-feature-reverse .about-feature-copy { order: initial; }
+  .about-feature-photo.portrait-photo { max-width: 100%; justify-self: stretch; }
+  .about-feature-photo.portrait-photo img { max-height: 34rem; object-fit: cover; object-position: center 37%; }
+  .about-feature { padding-block: 2.4rem; }
+}
